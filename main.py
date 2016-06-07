@@ -1,25 +1,26 @@
+import random
 from flask import Flask
 from template.youtube import HTML_TEMPLATE
-import random
+from modules.getRandItem import getRandItem
+from modules.getID import getID
 
 # get the ids from either using regex straights from the api 
 # orr... just regexp from the youtube site.
-ids = ('N7sid22OMV0', 'ZjE9V6b3sDI', 'ECwzgqRK7BQ')
+#ids = ('N7sid22OMV0', 'ZjE9V6b3sDI', 'ECwzgqRK7BQ')
+ids = getID("https://www.youtube.com/playlist?list=PLq_0uf5RiXNoX6-DfIJ8R1su2eQp0aNg8", "")
+
+rand = getRandItem(ids)
 
 app = Flask(__name__)
 @app.route('/')
 def homepage():
-	vhtml = HTML_TEMPLATE.substitute(yt_id=ids[random.randint(0,4)])
+	vhtml = HTML_TEMPLATE.substitute(yt_id=rand)
 	return """<h1>KlausWunderlich.se</h1>""" + vhtml
+	print rand
 
 @app.route('/videos/<vid>')
 def videos(vid):
 	return HTML_TEMPLATE.substitute(yt_id=vid)
 	
-@app.route('/klaus')
-def klaus():
-	return "Hello World, Welcome to klaus Town... show Dj Telefon video"
-
 if __name__ == '__main__':
-	# remember to take of debug when rolling into production :3... if not i will get reeekt
-	app.run(debug=True, use_reloader=True)
+	app.run(host="0.0.0.0",port=80 ,debug=True, use_reloader=True)
