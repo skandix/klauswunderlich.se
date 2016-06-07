@@ -4,7 +4,7 @@ import random
 
 # get the ids from either using regex straights from the api 
 # orr... just regexp from the youtube site.
-#ids = ('N7sid22OMV0', 'ZjE9V6b3sDI', 'ECwzgqRK7BQ')
+ids = ('N7sid22OMV0', 'ZjE9V6b3sDI', 'ECwzgqRK7BQ')
 
 app = Flask(__name__)
 @app.route('/')
