@@ -9,7 +9,7 @@ ids = ('N7sid22OMV0', 'ZjE9V6b3sDI', 'ECwzgqRK7BQ')
 app = Flask(__name__)
 @app.route('/')
 def homepage():
-	vhtml = HTML_TEMPLATE.substitute(yt_id=ids[random.randint(0,50)])
+	vhtml = HTML_TEMPLATE.substitute(yt_id=ids[random.randint(0,4)])
 	return """<h1>KlausWunderlich.se</h1>""" + vhtml
 
 @app.route('/videos/<vid>')
