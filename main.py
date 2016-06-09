@@ -27,7 +27,7 @@ def homepage():
 	else:
 		return """<h1> Things are going bit too fast, Please standby</h1>
 		<img src="https://scontent-frt3-1.cdninstagram.com/t51.2885-15/e35/12479068_275523542785751_1955961211_n.jpg?ig_cache_key=MTIzNTI5OTc5Mzg5NTExMzkxNQ%3D%3D.2">
-		<script> location.reload();</script>"""
+		<script> location.reload();</script>""", 404
 
 
 @app.route('/videos/<vid>')
