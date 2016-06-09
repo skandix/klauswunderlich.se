@@ -1,7 +1,7 @@
 import random
 from flask import Flask
 from flask import render_template
-from template.youtube import HTML_TEMPLATE
+from static.index import INDEX_TEMPLATE
 from modules.getRandItem import getRandItem
 #from modules.getID import getID
 #from modules.getSCode import is_url_ok
@@ -16,28 +16,12 @@ app = Flask(__name__)
 @app.route('/',)
 def homepage():
 	rand = getRandItem(ids)
-	#if True == is_url_ok("https://www.youtube.com/watch?v="+rand):
-	#	print "AllGood"
-	#else:
-	#	return """Video Not Found :(, \n Please Refresh"""
-
-	vhtml = HTML_TEMPLATE.substitute(yt_id=rand)
-	return """<h1>KlausWunderlich.se</h1>""" + vhtml
+	vhtml = INDEX_TEMPLATE.substitute(yt_id=rand)
+	return """<h1>klauswunderlich.se</h1>""" + vhtml
 
 @app.route('/videos/<vid>')
 def videos(vid):
-	return HTML_TEMPLATE.substitute(yt_id=vid)
-
-#testing "injecting" vars into javascript...iz disabled
-@app.route('/test/')
-def javascript():
-	rand = getRandItem(ids)
-	return render_template('js.html', v_id=rand)
-	return JS_TEMPLATE.substitute(v_id=rand)
-	
-	"""
-	jhtml = JS_TEMPLATE.substitute(v_id=Trand)
-				return jhtml"""
+	return INDEX_TEMPLATE.substitute(yt_id=vid)
 
 if __name__ == '__main__':
-	app.run(host="0.0.0.0",port=5000 ,debug=True, use_reloader=True)
+	app.run(host="0.0.0.0",port=80 ,debug=False, use_reloader=True)
