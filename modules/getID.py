@@ -16,19 +16,22 @@ def getID(url, s):
 	for i in loot:
 		clean = i.replace('/watch?v=', '')
 		onlyid.append(clean)
-		s += str([x for x in onlyid if onlyid.count(x)==1]).replace("[]", '').replace('/watch_videoshelf":', '').replace("['']", '')[1:-1]
+		s += str([x for x in onlyid if onlyid.count(x)==1]).replace("[]", '').replace('/watch_videoshelf":', '').replace("['']", '').replace("&", "")[1:-1]
 
 	count = 0
 	v = ""
 	for j in s:
 		count += 1
-		v += str(j).replace("'", "")
+		v += str(j).replace("'", "").replace("'", "")
 		if count == 13:
 			onetime.append(v)
 			count = 0
 			v = ""
 
-	return onetime
+	print onetime,'\n'
 
 #getID()
-getID("https://www.youtube.com/playlist?list=PLq_0uf5RiXNoX6-DfIJ8R1su2eQp0aNg8", "")
+#getID("https://www.youtube.com/playlist?list=PLq_0uf5RiXNoX6-DfIJ8R1su2eQp0aNg8", "")
+#getID("https://www.youtube.com/playlist?list=PL0LVG0VoEMm1uh9PtE8JWjqq4-PfmQYhA", "")
+#getID("https://www.youtube.com/playlist?list=PL0LVG0VoEMm2zg3wYvawpDiC3wcOvHqfb", "")
+#getID("https://www.youtube.com/playlist?list=PL0LVG0VoEMm0P7fmJLdQCYl9XgsJl3kvT", "")

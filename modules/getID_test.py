@@ -8,8 +8,10 @@ def test():
 		return i
 	print len(ids)
 
-if type(test()) == type(string):
-	print True
+print test()
 
-else: 
-	print False
+#if type(test()) == type(string):
+#	print True
+
+#else: 
+#	print False
