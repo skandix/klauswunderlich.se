@@ -45,7 +45,7 @@ def klaus():
 def page_not_found(e):
     return """<h1> Seems like you triggered a 404...#thuglyfe</h1>
 		<img src="https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/11709536_10203062236795068_3088811109895391547_n.jpg?oh=4b3c9a32b4b72285e8dbecd0d6685862&oe=58033BBD">
-		"""
+		<audio autoplay=1 loop=loop><source src="http://core.datapor.no/drop/thuglyfe.mp3" type="audio/mpeg"></audio>"""
 
 if __name__ == '__main__':
 	app.run(host="0.0.0.0",port=8080 ,debug=False, use_reloader=True)
