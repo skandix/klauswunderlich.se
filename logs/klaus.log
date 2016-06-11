@@ -1,0 +1,52 @@
+-=Started Logging=- 
+ 2016-06-10 22:38:03,268
+ * Debugger is active! 2016-06-10 22:38:03,272
+ * Debugger pin code: 111-291-720 2016-06-10 22:38:03,272
+ * Detected change in '/home/skandix/gitClones/klauswunderlich.se/main.py', reloading 2016-06-10 22:38:04,279
+-=Started Logging=- 
+ 2016-06-10 22:38:04,823
+ * Debugger is active! 2016-06-10 22:38:04,827
+ * Debugger pin code: 111-291-720 2016-06-10 22:38:04,828
+ * Detected change in '/home/skandix/gitClones/klauswunderlich.se/main.py', reloading 2016-06-10 22:38:05,835
+-=Started Logging=- 
+ 2016-06-10 22:38:06,411
+ * Debugger is active! 2016-06-10 22:38:06,415
+ * Debugger pin code: 111-291-720 2016-06-10 22:38:06,415
+127.0.0.1 - - [10/Jun/2016 22:38:11] "GET / HTTP/1.1" 200 - 2016-06-10 22:38:11,093
+127.0.0.1 - - [10/Jun/2016 22:38:12] "GET /favicon.ico HTTP/1.1" 200 - 2016-06-10 22:38:12,002
+ * Detected change in '/home/skandix/gitClones/klauswunderlich.se/main.py', reloading 2016-06-10 22:44:45,644
+-=Started Logging=- 
+ 2016-06-10 22:51:37,398
+ * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit) 2016-06-10 22:51:37,402
+ * Restarting with stat 2016-06-10 22:51:37,403
+-=Started Logging=- 
+ 2016-06-10 22:51:37,905
+ * Debugger is active! 2016-06-10 22:51:37,910
+ * Debugger pin code: 111-291-720 2016-06-10 22:51:37,910
+127.0.0.1 - - [10/Jun/2016 22:51:51] "GET / HTTP/1.1" 200 - 2016-06-10 22:51:51,100
+127.0.0.1 - - [10/Jun/2016 22:51:51] "GET /favicon.ico HTTP/1.1" 404 - 2016-06-10 22:51:51,395
+ * Detected change in '/home/skandix/gitClones/klauswunderlich.se/static/index.py', reloading 2016-06-10 22:52:32,076
+ * Restarting with stat 2016-06-10 22:52:32,117
+-=Started Logging=- 
+ 2016-06-10 22:52:32,609
+ * Debugger is active! 2016-06-10 22:52:32,613
+ * Debugger pin code: 111-291-720 2016-06-10 22:52:32,613
+ * Detected change in '/home/skandix/gitClones/klauswunderlich.se/static/index.py', reloading 2016-06-10 22:52:33,623
+ * Restarting with stat 2016-06-10 22:52:33,664
+-=Started Logging=- 
+ 2016-06-10 22:52:34,185
+ * Debugger is active! 2016-06-10 22:52:34,190
+ * Debugger pin code: 111-291-720 2016-06-10 22:52:34,190
+127.0.0.1 - - [10/Jun/2016 22:52:37] "GET / HTTP/1.1" 200 - 2016-06-10 22:52:37,522
+ * Detected change in '/home/skandix/gitClones/klauswunderlich.se/main.py', reloading 2016-06-10 23:16:46,565
+ * Restarting with stat 2016-06-10 23:16:46,607
+-=Started Logging=- 
+ 2016-06-10 23:18:07,190
+ * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit) 2016-06-10 23:18:07,195
+ * Restarting with stat 2016-06-10 23:18:07,195
+-=Started Logging=- 
+ 2016-06-10 23:18:07,685
+ * Debugger is active! 2016-06-10 23:18:07,690
+ * Debugger pin code: 111-291-720 2016-06-10 23:18:07,690
+ * Detected change in '/home/skandix/gitClones/klauswunderlich.se/main.py', reloading 2016-06-10 23:18:13,712
+ * Restarting with stat 2016-06-10 23:18:13,756
