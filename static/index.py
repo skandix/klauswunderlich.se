@@ -8,6 +8,7 @@ INDEX_TEMPLATE = Template("""
 
 <div class="mdl-grid">
   <div class="mdl-cell mdl-cell--4-col mdl-cell--4-offset">
+}
 <div id="player"></div>
 <script src="http://www.youtube.com/player_api"> </script>
 <script>
