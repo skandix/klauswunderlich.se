@@ -62,4 +62,4 @@ def page_not_found(e):
 		<audio autoplay=1 loop=loop><source src="http://core.datapor.no/drop/thuglyfe.mp3" type="audio/mpeg"></audio>""", 404
 
 if __name__ == '__main__':
-	app.run(host="0.0.0.0",port=80 ,debug=False, use_reloader=True)
+	app.run(host="0.0.0.0",port=1337 ,debug=False, use_reloader=True)
