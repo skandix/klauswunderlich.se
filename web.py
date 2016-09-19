@@ -1,6 +1,7 @@
 import random
 from flask import Flask, request
 import logging
+import os
 
 # All of these are modules/Templates i have written myself
 from static.index import INDEX_TEMPLATE
@@ -62,4 +63,5 @@ def page_not_found(e):
 		<audio autoplay=1 loop=loop><source src="http://core.datapor.no/drop/thuglyfe.mp3" type="audio/mpeg"></audio>""", 404
 
 if __name__ == '__main__':
-	app.run(host="0.0.0.0",port=5000)
+    	port = int(os.environ.get("PORT", 5000))
+	app.run(host="0.0.0.0",port=port)
