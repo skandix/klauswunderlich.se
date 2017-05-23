@@ -50,3 +50,9 @@
  * Debugger pin code: 111-291-720 2016-06-10 23:18:07,690
  * Detected change in '/home/skandix/gitClones/klauswunderlich.se/main.py', reloading 2016-06-10 23:18:13,712
  * Restarting with stat 2016-06-10 23:18:13,756
+-=Started Logging=- 
+ 2017-05-23 21:33:13,282
+ * Running on http://0.0.0.0:4020/ (Press CTRL+C to quit) 2017-05-23 21:33:13,292
+Starting new HTTPS connection (1): www.youtube.com 2017-05-23 21:33:37,048
+"GET /watch?v=lQJpyMKjWKQ HTTP/1.1" 200 None 2017-05-23 21:33:37,170
+127.0.0.1 - - [23/May/2017 21:33:37] "GET / HTTP/1.1" 200 - 2017-05-23 21:33:37,690
